@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Four in a Row</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="table">
+    <header class="marquee">
+      <h1>FOUR<span>IN A ROW</span></h1>
+    </header>
+
+    <div class="scoreboard">
+      <div class="turn-indicator" id="turnIndicator">
+        <span class="chip chip--red" id="turnChip"></span>
+        <span id="turnText">Red's turn</span>
+      </div>
+      <button id="resetBtn" class="reset-btn">New game</button>
+    </div>
+
+    <div class="board-frame">
+      <div class="board" id="board" role="grid" aria-label="Connect Four board"></div>
+    </div>
+
+    <p class="status" id="status" aria-live="polite"></p>
+  </main>
+
+  <div class="win-overlay" id="winOverlay">
+    <div class="win-card">
+      <p id="winMessage"></p>
+      <button id="playAgainBtn">Play again</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
